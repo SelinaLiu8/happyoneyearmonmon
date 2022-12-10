@@ -1,0 +1,231 @@
+:root {
+    /* colors */
+    --main-color: #CFB9A5;
+    --second-color: #E8CCBF;
+    --accent-color: #81968F;
+
+    /* font */
+    --title-font-family: 'Dancing script';
+    --body-font-family: sans-serif;
+
+    --h1-font-size: 3rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 0.75rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rosybrown;
+    font-family: var(--title-font-family);
+}
+
+.book {
+    position: relative;
+    width: 450px;
+    height: 650px;
+    transition: transform 0.5s;
+}
+
+.paper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+}
+
+.front,
+.back {
+    background-color: white;
+    position: absolute;
+    box-shadow: 0px 5px 5px rgba(83, 83, 83, 0.3);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.front {
+    z-index: 1;
+    backface-visibility: hidden;
+    border-left: 3px solid rosybrown;
+}
+
+.back {
+    z-index: 0;
+}
+
+/* Contents */
+
+.front-content,
+.back-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: var(--second-color);
+}
+
+.title-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.end-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(-180deg);
+}
+
+.back-content {
+    transform: rotateY(180deg);
+}
+
+.back-number {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+}
+
+.front-number {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+}
+
+.input-box {
+    position: absolute;
+    display: block;
+    bottom: 150px;
+}
+
+/* Paper Flip Effect */
+.flipped .front,
+.flipped .back {
+    transform: rotateY(-180deg);
+}
+
+/* Controller Buttons */
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.5s;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover i {
+    color: rgb(55, 55, 55);
+}
+
+i {
+    font-size: 50px;
+    color: rgb(76, 76, 76);
+}
+
+/* Paper Stack Order */
+#p1 {
+    z-index: 10;
+}
+
+#p2 {
+    z-index: 9;
+}
+
+#p3 {
+    z-index: 8;
+}
+
+#p4 {
+    z-index: 7;
+}
+
+#p5 {
+    z-index: 6;
+}
+
+#p6 {
+    z-index: 5;
+}
+
+#p7 {
+    z-index: 4;
+}
+
+#p8 {
+    z-index: 3;
+}
+
+#p9 {
+    z-index: 2;
+}
+
+#p10 {
+    z-index: 1; 
+}
+
+/* Individual Pages (front and back) */
+#f1 {
+    background-color: var(--main-color);
+}
+
+#b10 {
+    background: radial-gradient(circle, var(--second-color) 0%, var(--main-color) 35%, var(--accent-color) 100%);;
+}
+
+.main-title {
+    margin-top: 100px;
+    position: absolute;
+}
+
+.end-title {
+    font-size: var(--h2-font-size);
+    font-family: var(--title-font-family);
+}
+
+
+/* text */
+h1 {
+    font-size: var(--h1-font-size);
+}
+
+h2 {
+    font-family: var(--body-font-family);
+    font-size: var(--h2-font-size);
+}
+
+/* images */
+img {
+    max-height: 200px;
+}
+
+.heart-img {
+    display: block;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    box-shadow: 0px 5px 5px rgba(83, 83, 83, 0.5);
+}
