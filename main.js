@@ -150,3 +150,7 @@ function goPrevPage() {
         currentLocation--;
     }
 }
+
+function password () {
+    var x = document.getElementById("my-input").value;
+}

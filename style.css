@@ -8,7 +8,7 @@
     --title-font-family: 'Dancing script';
     --body-font-family: sans-serif;
 
-    --h1-font-size: 3rem;
+    --h1-font-size: 2.5rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 0.75rem;
 }
@@ -114,7 +114,14 @@ body {
 .input-box {
     position: absolute;
     display: block;
-    bottom: 150px;
+    bottom: 100px;
+}
+
+.input-box input {
+    width: 100;
+    border: var(--accent-color);
+    outline: var(--accent-color);
+    background: transparent;
 }
 
 /* Paper Flip Effect */
@@ -196,13 +203,30 @@ i {
 }
 
 .main-title {
-    margin-top: 100px;
+    font-size: 4rem;
+    margin-top: 70px;
     position: absolute;
 }
 
 .end-title {
     font-size: var(--h2-font-size);
     font-family: var(--title-font-family);
+}
+
+.intro-title {
+    position: absolute;
+    font-size: var(--h1-font-size);
+    padding-top: 30px;
+}
+
+.intro-p {
+    position: relative;
+    padding-top: 100px;
+    padding-left: 2em;
+}
+
+#b1 {
+
 }
 
 
@@ -212,13 +236,13 @@ h1 {
 }
 
 h2 {
-    font-family: var(--body-font-family);
+    font-family: var(--title-font-family);
     font-size: var(--h2-font-size);
 }
 
 /* images */
 img {
-    max-height: 200px;
+    max-height: 300px;
 }
 
 .heart-img {
