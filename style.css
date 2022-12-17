@@ -249,6 +249,19 @@ i {
     box-shadow: none;
 }
 
+.trips-title{
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.trip-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    justify-content: center;
+    gap: 20px;
+}
+
 
 /* text */
 h1 {
@@ -280,4 +293,11 @@ img {
     height: 2000px;  
     text-align: center;  
     z-index: -1;
+}
+
+.trip-img {
+    position: relative;
+    height: 110px;
+    width: 130px;
+    object-fit: cover;
 }
