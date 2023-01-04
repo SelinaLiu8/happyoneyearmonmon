@@ -1,16 +1,16 @@
 :root {
     /* colors */
-    --main-color: #CFB9A5;
-    --second-color: #E8CCBF;
-    --accent-color: #81968F;
+    --main-color: #fff1e1;
+    --second-color: #fff1e1;
+    --accent-color: #f69ca7;
 
     /* font */
     --title-font-family: 'Dancing script';
     --body-font-family: sans-serif;
 
     --h1-font-size: 2.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 0.75rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1rem;
 }
 
 * {
@@ -293,14 +293,17 @@ i {
 
 .fav-memory1 {
     position: relative;
+    display: block;
     margin: auto;
     justify-content: center;
-    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .fav-mem-text {
-    align-items: center;
-    margin: auto;
+    position: relative;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 /* text */
@@ -311,6 +314,10 @@ h1 {
 h2 {
     font-family: var(--title-font-family);
     font-size: var(--h2-font-size);
+}
+
+h3 {
+    font-size: var(--h3-font-size);
 }
 
 /* images */
@@ -345,9 +352,12 @@ img {
 }
 
 .fav-mem-img {
+    display: block;
     position: relative;
-    height: 200px;
-    width: 250px;
+    height: 250px;
+    width: 300px;
     object-fit: cover;
     border-radius: 16px;
+    margin: auto;
+    margin-bottom: 40px;
 }
