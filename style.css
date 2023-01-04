@@ -322,6 +322,8 @@ i {
     background-size: fill;
     text-align: center;
     color: transparent;
+    padding-top: 50px;
+    font-size: var(--h2-font-size);
 }
 
 .food-text:hover {
