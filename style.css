@@ -306,6 +306,34 @@ i {
     padding-bottom: 20px;
 }
 
+.food-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 90px;
+}
+
+.food-text {
+    position: relative;
+    height: 120px;
+    width: 120px;
+    background-size: fill;
+    text-align: center;
+    color: transparent;
+}
+
+.food-text:hover {
+    background-color: rgba(242, 161, 181, 0.724);
+    transition: 0.5s;
+    color: white;
+}
+
+.food-img {
+    background-size: cover;
+}
+
 /* text */
 h1 {
     font-size: var(--h1-font-size);
