@@ -211,6 +211,7 @@ i {
     position: relative;
     padding-top: 100px;
     padding-left: 2em;
+    padding-right: 2em;
 }
 
 .page-title {
@@ -270,12 +271,14 @@ i {
     text-align: center;
     color: transparent;
     border-radius: 16px;
+    padding-top: 10px;
+    font-size: var(--h2-font-size);
 }
 
 .text-img-text:hover {
     background-color: rgba(83, 83, 83, 0.5);
     transition: 0.5s;
-    color: black;
+    color: white;
 }
 
 .fav-memory1 {
@@ -291,6 +294,11 @@ i {
     position: relative;
     text-align: center;
     padding-bottom: 20px;
+}
+
+.fav-mem-p {
+    position: relative;
+    text-align: center;
 }
 
 .food-list {
@@ -331,8 +339,82 @@ i {
     gap: 50px;
 }
 
-.ach-company {
+.ach-company,
+.ach-person {
+    text-align: center;
+}
 
+.growth-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    justify-content: center;
+    gap: 20px;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 90px;
+}
+
+.growth {
+    position: relative;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 5px 5px rgba(83, 83, 83, 0.5);
+}
+
+.growth:hover {
+    box-shadow: none;
+    transition: 0.3s;
+}
+
+.growth-text {
+    width: 50px;
+}
+
+.growth-title,
+.growth-p {
+    text-align: center;
+}
+
+.growth-p {
+    font-size: var(--h3-font-size);
+}
+
+.start {
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 5px 5px rgba(83, 83, 83, 0.5);
+    margin: auto;
+}
+
+.start-year {
+    position: relative;
+    background-color: var(--accent-color);
+    margin-bottom: 50px;
+}
+
+.start-year-text {
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.start-month,
+.start-date {
+    text-align: center;
+}
+
+.start-month {
+    margin-bottom: 20px;
+}
+
+.start-date {
+    padding-bottom: 50px;
+    font-size: 4rem;
 }
 
 /* text */
@@ -406,4 +488,19 @@ img {
     height: 150px;
     width: 150px;
     border-radius: 50%;
+}
+
+#ach-img2 {
+    object-fit: fill;
+    object-position: 50% 50%;
+}
+
+.growth-img {
+    position: relative;
+    display: block;
+    height: 120px;
+    width: 150px;
+    object-fit: cover;
+    margin: auto;
+    margin-bottom: 10px;
 }
