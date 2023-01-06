@@ -112,19 +112,6 @@ body {
     right: 16px;
 }
 
-.input-box {
-    position: absolute;
-    display: block;
-    bottom: 100px;
-}
-
-.input-box input {
-    width: 100;
-    border: var(--accent-color);
-    outline: var(--accent-color);
-    background: transparent;
-}
-
 /* Paper Flip Effect */
 .flipped .front,
 .flipped .back {
@@ -155,28 +142,28 @@ i {
 
 /* Paper Stack Order */
 #p1 {
-    z-index: 7;
-}
-
-#p2 {
     z-index: 6;
 }
 
-#p3 {
+#p2 {
     z-index: 5;
 }
 
-#p4 {
+#p3 {
     z-index: 4;
 }
 
-#p5 {
+#p4 {
     z-index: 3;
 }
 
-#p6 {
+#p5 {
     z-index: 2;
 }
+
+/* #p6 {
+    z-index: 2;
+} */
 
 /* #p7 {
     z-index: 4;
@@ -336,6 +323,18 @@ i {
     background-size: cover;
 }
 
+.ach-list {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    gap: 50px;
+}
+
+.ach-company {
+
+}
+
 /* text */
 h1 {
     font-size: var(--h1-font-size);
@@ -353,6 +352,16 @@ h3 {
 /* images */
 img {
     max-height: 300px;
+}
+
+.white-box {
+    position: relative;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    padding-top: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 5px 5px rgba(83, 83, 83, 0.5);
 }
 
 .heart-img {
@@ -390,4 +399,11 @@ img {
     border-radius: 16px;
     margin: auto;
     margin-bottom: 40px;
+    box-shadow: rgba(83, 83, 83, 0.5);
+}
+
+.ach-img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
 }
