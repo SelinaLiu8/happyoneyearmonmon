@@ -389,6 +389,11 @@ i {
     margin: auto;
 }
 
+.start:hover {
+    box-shadow: none;
+    transition: 0.3s;
+}
+
 .start-year {
     position: relative;
     background-color: var(--accent-color);
